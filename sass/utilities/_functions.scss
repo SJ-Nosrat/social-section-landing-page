@@ -1,0 +1,12 @@
+@use 'sass:math';
+@use './variables' as var;
+
+// convert pixel to rem values
+@function rem($pixel) {
+    @return math.div($pixel, 16) * 1rem;
+}
+
+// get the font-weight by name
+@function fw($weight) {
+    @return map-get(var.$fontW , $weight);
+}
