@@ -1,0 +1,39 @@
+@use '../utilities/' as u;
+
+.section--wrapper-02 {
+    @include u.grid-plc-cnt-center;
+    row-gap: u.rem(16);
+
+    div:nth-child(1) {
+        padding: u.rem(16) u.rem(76);
+    }
+
+    div:nth-child(2) {
+        padding: u.rem(16) u.rem(61);
+    }
+
+    div:nth-child(3) {
+        padding: u.rem(16) u.rem(74)
+    }
+}
+
+.rated {
+    @include u.grid-plc-cnt-center;
+    // margin-bottom: u.rem(16);
+    background-color: var(--neutral-light-grayish-magenta);
+    border-radius: u.rem(9);
+
+    p {
+        color: var(--very-dark-magenta);
+        font-weight: u.fw(bold);
+        font-size: u.rem(13);
+        line-height: u.rem(14.56);
+    }
+}
+
+.stars__wrapper {
+    @include u.flex-center;
+    gap: u.rem(8.45);
+    grid-row: 1;
+    margin-bottom: u.rem(16.23);
+}
