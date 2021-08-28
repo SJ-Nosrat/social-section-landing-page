@@ -166,4 +166,27 @@ body {
   margin-bottom: 1.014375rem;
 }
 
+.main__cards {
+  display: grid;
+  place-content: center;
+  row-gap: 1rem;
+}
+.main__cards .card {
+  background-color: var(--very-dark-magenta);
+  padding: 2.5rem 2rem 2rem;
+}
+
+.card__review-01 {
+  margin-top: 3.0625rem;
+}
+
+blockquote p {
+  color: var(--neutral-white);
+  font-size: 0.8125rem;
+  line-height: 1.4375rem;
+  letter-spacing: -0.014375rem;
+  font-weight: 500;
+  margin-top: 1.625rem;
+}
+
 /*# sourceMappingURL=style.css.map */

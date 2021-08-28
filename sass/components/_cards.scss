@@ -1,5 +1,6 @@
 @use '../utilities/' as u;
 
+// Ratings Styles
 .section--wrapper-02 {
     @include u.grid-plc-cnt-center;
     row-gap: u.rem(16);
@@ -36,4 +37,31 @@
     gap: u.rem(8.45);
     grid-row: 1;
     margin-bottom: u.rem(16.23);
+}
+
+// Main cards styles
+
+.main__cards {
+    @include u.grid-plc-cnt-center;
+    row-gap: u.rem(16);
+
+    .card {
+        background-color: var(--very-dark-magenta);
+        padding: u.rem(40) u.rem(32) u.rem(32);
+    }
+}
+
+.card__review-01 {
+    margin-top: u.rem(49);
+}
+
+blockquote {
+    p {
+        color: var(--neutral-white);
+        font-size: u.rem(13);
+        line-height: u.rem(23);
+        letter-spacing: u.rem(-0.23);
+        font-weight: u.fw(medium);
+        margin-top: u.rem(26);
+    }
 }
