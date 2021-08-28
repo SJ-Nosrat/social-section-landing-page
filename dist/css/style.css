@@ -93,7 +93,7 @@ body {
 }
 
 body {
-  background-image: url(../../images/bg-pattern-top-mobile.svg), url(../../images/bg-pattern-bottom-mobile.svg);
+  background-image: url(../../images/bg-pattern-top-desktop.svg), url(../../images/bg-pattern-bottom-deskbg-pattern-top-desktop.svg);
   background-position: top left, bottom right;
   background-repeat: no-repeat;
   background-size: contain;
@@ -101,6 +101,8 @@ body {
 
 .sect--wrapper-01 {
   text-align: center;
+  display: grid;
+  place-content: center;
 }
 .sect--wrapper-01 .main__heading {
   color: var(--very-dark-magenta);
@@ -109,6 +111,7 @@ body {
   font-weight: 700;
   letter-spacing: -0.07125rem;
   margin-bottom: 1.125rem;
+  max-width: 26.1875rem;
 }
 .sect--wrapper-01 .main__desc {
   color: var(--neutral-dark-grayish-magenta);
@@ -117,6 +120,7 @@ body {
   letter-spacing: -0.03125rem;
   margin-bottom: 2.5rem;
   font-weight: 500;
+  max-width: 26.875rem;
 }
 
 body {
@@ -171,6 +175,7 @@ body {
   background-color: var(--very-dark-magenta);
   padding: 2.5rem 2rem 2rem;
   border-radius: 0.5625rem;
+  max-width: 20.4375rem;
 }
 
 .card__review-01 {
