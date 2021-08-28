@@ -123,6 +123,13 @@ body {
   font-weight: 500;
 }
 
+.stars__wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.528125rem;
+}
+
 body {
   display: grid;
   place-content: center;

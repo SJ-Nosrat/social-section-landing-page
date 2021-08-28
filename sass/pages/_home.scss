@@ -28,3 +28,8 @@ body {
         font-weight: u.fw(medium);
     }
 }
+
+.stars__wrapper {
+    @include u.flex-center;
+    gap: u.rem(8.45);
+}
