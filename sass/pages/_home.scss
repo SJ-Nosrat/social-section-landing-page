@@ -1,7 +1,8 @@
 @use '../utilities/' as u;
 
 body {
-    background-image: url(../../images/bg-pattern-top-mobile.svg), url(../../images/bg-pattern-bottom-mobile.svg);
+    background-image: url(../../images/bg-pattern-top-desktop.svg),
+                        url(../../images/bg-pattern-bottom-deskbg-pattern-top-desktop.svg);
     background-position: top left, bottom right;
     background-repeat: no-repeat;
     background-size: contain;
@@ -9,6 +10,7 @@ body {
 
 .sect--wrapper-01 {
     text-align: center;
+    @include u.grid-plc-cnt-center;
 
     .main__heading {
         color: var(--very-dark-magenta);
@@ -17,6 +19,7 @@ body {
         font-weight: u.fw(bold);
         letter-spacing: u.rem(-1.14);
         margin-bottom: u.rem(18);
+        max-width: u.rem(419);
     }
 
     .main__desc {
@@ -26,6 +29,7 @@ body {
         letter-spacing: u.rem(-0.5);
         margin-bottom: u.rem(40);
         font-weight: u.fw(medium);
+        max-width: u.rem(430);
     }
 }
 
