@@ -1,11 +1,10 @@
 @use '../utilities/' as u;
 
 body {
-    background-image: url(../../images/bg-pattern-top-desktop.svg),
-                        url(../../images/bg-pattern-bottom-deskbg-pattern-top-desktop.svg);
+    background-image: url(../../images/bg-pattern-top-desktop.svg), url(../../images/bg-pattern-bottom-desktop.svg);
     background-position: top left, bottom right;
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: 39%, 100%;
 }
 
 .sect--wrapper-01 {
