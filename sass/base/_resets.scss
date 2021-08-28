@@ -30,11 +30,6 @@ ul[role='list'],
 ol[role='list'] {
   list-style: none;
 }
-
-html {
-    height: 100%;
-}
-
 /* Set core root defaults */
 html:focus-within {
   scroll-behavior: smooth;
