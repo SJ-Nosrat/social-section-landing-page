@@ -96,7 +96,12 @@ body {
   background-image: url(../../images/bg-pattern-top-desktop.svg), url(../../images/bg-pattern-bottom-desktop.svg);
   background-position: top left, bottom right;
   background-repeat: no-repeat;
-  background-size: 39%, 100%;
+  background-size: contain;
+}
+@media (min-width: 1200px) {
+  body {
+    background-size: 39%, 75%;
+  }
 }
 
 .sect--wrapper-01 {
@@ -123,12 +128,45 @@ body {
   max-width: 26.875rem;
 }
 
+@media (min-width: 1440px) {
+  .main {
+    min-width: 69.375rem;
+    place-self: center;
+    display: grid;
+    row-gap: 4.375rem;
+  }
+
+  .main__intro {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+  }
+
+  .sect--wrapper-01 {
+    text-align: left;
+  }
+  .sect--wrapper-01 .main__heading {
+    font-size: 3rem;
+    line-height: 3rem;
+    max-width: 27.8125rem;
+  }
+  .sect--wrapper-01 .main__desc {
+    font-size: 0.9375rem;
+    line-height: 1.5625rem;
+    max-width: 27.8125rem;
+  }
+}
 body {
   display: grid;
   place-content: center;
   padding: 5.5rem 1.5rem 6.1875rem;
 }
 
+@media (min-width: 90rem) {
+  body {
+    justify-content: unset;
+  }
+}
 .section--wrapper-02 {
   display: grid;
   place-content: center;
@@ -175,7 +213,7 @@ body {
   background-color: var(--very-dark-magenta);
   padding: 2.5rem 2rem 2rem;
   border-radius: 0.5625rem;
-  max-width: 20.4375rem;
+  max-width: 21.875rem;
 }
 
 .card__review-01 {
@@ -221,6 +259,66 @@ blockquote p {
   letter-spacing: -0.014375rem;
   font-weight: 500;
   margin-top: 1.625rem;
+}
+
+@media (min-width: 1440px) {
+  .section--wrapper-02 {
+    width: 33.75rem;
+    place-content: unset;
+    align-content: center;
+  }
+  .section--wrapper-02 div:nth-child(1) {
+    padding: 1.25rem 5.625rem 1.25rem 2rem;
+    place-self: start;
+  }
+  .section--wrapper-02 div:nth-child(2) {
+    padding: 1.25rem 3.75rem 1.25rem 2rem;
+    place-self: center;
+  }
+  .section--wrapper-02 div:nth-child(3) {
+    padding: 1.25rem 5.5rem 1.25rem 2rem;
+    place-self: end;
+  }
+
+  .rated {
+    grid-template-columns: 7.3125rem 1fr;
+    column-gap: 2rem;
+  }
+
+  .stars__wrapper {
+    grid-row: 1;
+    grid-column: 1;
+    margin: 0;
+  }
+
+  .rate__desc {
+    grid-row: 1;
+    grid-column: 2;
+  }
+
+  .main__cards {
+    grid-template-columns: repeat(auto-fit, minmax(20.4375rem, 21.875rem));
+    column-gap: 1.875rem;
+    row-gap: 0;
+    place-content: unset;
+    height: 16.625rem;
+  }
+  .main__cards .card {
+    height: 14.625rem;
+  }
+
+  .card__review-01 {
+    margin-top: 0;
+    place-self: start;
+  }
+
+  .card__review-02 {
+    place-self: center;
+  }
+
+  .card__review-03 {
+    place-self: end;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -4,7 +4,11 @@ body {
     background-image: url(../../images/bg-pattern-top-desktop.svg), url(../../images/bg-pattern-bottom-desktop.svg);
     background-position: top left, bottom right;
     background-repeat: no-repeat;
-    background-size: 39%, 100%;
+    background-size: contain;
+
+    @media (min-width: 1200px) {
+        background-size: 39%, 75%;
+    }
 }
 
 .sect--wrapper-01 {
@@ -29,6 +33,37 @@ body {
         margin-bottom: u.rem(40);
         font-weight: u.fw(medium);
         max-width: u.rem(430);
+    }
+}
+
+@media (min-width: 1440px) {
+    .main {
+        min-width: u.rem(1110);
+        place-self: center;
+        display: grid;
+        row-gap: u.rem(70);
+    }
+
+    .main__intro {
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+    }
+
+    .sect--wrapper-01 {
+        text-align: left;
+        
+        .main__heading {
+            font-size: u.rem(48);
+            line-height: u.rem(48);
+            max-width: u.rem(445);
+        }
+
+        .main__desc {
+            font-size: u.rem(15);
+            line-height: u.rem(25);
+            max-width: u.rem(445);
+        }
     }
 }
 

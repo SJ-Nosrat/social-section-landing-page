@@ -4,3 +4,9 @@ body {
     @include u.grid-plc-cnt-center;
     padding: u.rem(88) u.rem(24) u.rem(99);
 }
+
+@media (min-width: u.rem(1440)) {
+    body {
+        justify-content: unset;
+    }
+}
