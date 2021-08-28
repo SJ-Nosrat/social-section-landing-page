@@ -174,10 +174,43 @@ body {
 .main__cards .card {
   background-color: var(--very-dark-magenta);
   padding: 2.5rem 2rem 2rem;
+  border-radius: 0.5625rem;
 }
 
 .card__review-01 {
   margin-top: 3.0625rem;
+}
+
+.card--grid {
+  display: grid;
+  grid-template-columns: 3.9375rem 1fr;
+}
+.card--grid .profile__pic {
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 50%;
+  grid-row: 1;
+  grid-column: 1;
+}
+.card--grid .name__wrapper {
+  grid-row: 1;
+  grid-column: 2;
+  align-self: center;
+  display: grid;
+  row-gap: 0.3125rem;
+}
+.card--grid .card__title {
+  font-size: 0.8125rem;
+  font-weight: 700;
+  line-height: 0.91rem;
+  color: var(--neutral-white);
+  text-transform: capitalize;
+}
+.card--grid .verified {
+  color: var(--soft-pink);
+  font-size: 0.8125rem;
+  line-height: 0.9375rem;
+  text-transform: capitalize;
 }
 
 blockquote p {

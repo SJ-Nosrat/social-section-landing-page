@@ -48,12 +48,51 @@
     .card {
         background-color: var(--very-dark-magenta);
         padding: u.rem(40) u.rem(32) u.rem(32);
+        border-radius: u.rem(9);
     }
 }
 
 .card__review-01 {
     margin-top: u.rem(49);
 }
+
+.card--grid {
+    display: grid;
+    grid-template-columns: u.rem(63) 1fr;
+
+    .profile__pic {
+        width: u.rem(40);
+        height: u.rem(40);
+        border-radius: 50%;
+        grid-row: 1;
+        grid-column: 1;
+    }
+
+    .name__wrapper {
+        grid-row: 1;
+        grid-column: 2;
+        align-self: center;
+        display: grid;
+        row-gap: u.rem(5);
+    }
+
+    .card__title {
+        font-size: u.rem(13);
+        font-weight: u.fw(bold);
+        line-height: u.rem(14.56);
+        color: var(--neutral-white);
+        text-transform: capitalize;
+    }
+
+    .verified {
+        color: var(--soft-pink);
+        font-size: u.rem(13);
+        line-height: u.rem(15);
+        text-transform: capitalize;
+    }
+}
+
+
 
 blockquote {
     p {
