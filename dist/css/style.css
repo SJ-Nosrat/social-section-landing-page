@@ -85,7 +85,7 @@ select {
 :root {
   --very-dark-magenta: hsl(300, 43%, 22%);
   --soft-pink: hsl(333, 80%, 67%);
-  --neutral-dark-grayish-magenta: hsl(303, 10%, 53%);
+  --neutral-dark-grayish-magenta: hsl(302, 10%, 53%);
   --neutral-light-grayish-magenta: hsl(300, 24%, 96%);
   --neutral-white: hsl(0, 0%, 100%);
 }
@@ -113,6 +113,14 @@ body {
   font-weight: 700;
   letter-spacing: -0.07125rem;
   margin-bottom: 1.125rem;
+}
+.sect--wrapper-01 .main__desc {
+  color: var(--neutral-dark-grayish-magenta);
+  font-size: 0.9375rem;
+  line-height: 1.5625rem;
+  letter-spacing: -0.03125rem;
+  margin-bottom: 2.5rem;
+  font-weight: 500;
 }
 
 body {

@@ -18,4 +18,13 @@ body {
         letter-spacing: u.rem(-1.14);
         margin-bottom: u.rem(18);
     }
+
+    .main__desc {
+        color: var(--neutral-dark-grayish-magenta);
+        font-size: u.rem(15);
+        line-height: u.rem(25);
+        letter-spacing: u.rem(-0.5);
+        margin-bottom: u.rem(40);
+        font-weight: u.fw(medium);
+    }
 }
