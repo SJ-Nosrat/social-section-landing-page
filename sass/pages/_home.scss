@@ -7,3 +7,15 @@ body {
     background-size: contain;
 }
 
+.sect--wrapper-01 {
+    text-align: center;
+
+    .main__heading {
+        color: var(--very-dark-magenta);
+        font-size: u.rem(32);
+        line-height: u.rem(32);
+        font-weight: u.fw(bold);
+        letter-spacing: u.rem(-1.14);
+        margin-bottom: u.rem(18);
+    }
+}

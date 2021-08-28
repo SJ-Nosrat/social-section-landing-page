@@ -103,6 +103,18 @@ body {
   background-size: contain;
 }
 
+.sect--wrapper-01 {
+  text-align: center;
+}
+.sect--wrapper-01 .main__heading {
+  color: var(--very-dark-magenta);
+  font-size: 2rem;
+  line-height: 2rem;
+  font-weight: 700;
+  letter-spacing: -0.07125rem;
+  margin-bottom: 1.125rem;
+}
+
 body {
   display: grid;
   place-content: center;
