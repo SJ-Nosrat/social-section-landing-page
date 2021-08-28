@@ -1,0 +1,6 @@
+@use '../utilities' as u;
+
+body {
+    @include u.grid-plc-cnt-center;
+    padding: u.rem(88) u.rem(24) u.rem(99);
+}
